@@ -6,7 +6,8 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
+<link rel="stylesheet" type="text/css" th:href="@{/css/employees-style.css}" />
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -17,10 +18,15 @@
 </head>
 
 <body>
-
+<header th:fragment="header">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand">
+      Employee Management System
+    </a>
+  </nav>
+</header>
 	<div class="container">
-
-		<h3>Employee List</h3>
+		<h2>List Employees</h2>
 		<hr>
 
 		<!-- Add a button -->

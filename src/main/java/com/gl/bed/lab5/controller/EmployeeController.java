@@ -60,7 +60,7 @@ public class EmployeeController {
 		theModel.addAttribute("employee", employee);
 
 		// send over to our form
-		return "employees/employee-form";
+		return "employees/employee-update-form";
 	}
 
 	@PostMapping("/save")
